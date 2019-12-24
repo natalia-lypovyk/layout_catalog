@@ -1,0 +1,15 @@
+.card {
+  margin: 0 24px 50px; }
+  .card__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1000px; }
+
+/*# sourceMappingURL=card-list.css.map */

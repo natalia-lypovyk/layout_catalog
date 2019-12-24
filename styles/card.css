@@ -1,0 +1,85 @@
+.card {
+  width: 200px;
+  background-color: #fff;
+  border: 1px solid #f3f3f3;
+  border-radius: 5px;
+  padding: 30px 14px 15px; }
+  .card__img {
+    display: block;
+    width: 160px;
+    height: 134px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin: 0 auto; }
+  .card__info {
+    margin-top: 45px;
+    margin-bottom: 15px; }
+  .card__title {
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 500;
+    margin-bottom: 5px; }
+  .card__rate {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 15px;
+    margin-bottom: 4px; }
+  .card__stars {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .card__cost {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    width: 100%; }
+  .card__value {
+    font-size: 16px;
+    font-weight: bold; }
+  .card:hover {
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.07);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.07); }
+  .card__button {
+    width: 100%;
+    line-height: 36px;
+    background-color: #00acdc;
+    border-radius: 5px;
+    border: 1px solid #00acdc;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: roboto, sans-serif;
+    margin-top: 4px; }
+  .card__button:hover {
+    color: #00acdc;
+    background-color: #fff; }
+
+.star {
+  height: 15px;
+  width: 15px;
+  background: url(/images/star.svg) no-repeat center; }
+  .star:not(:last-child) {
+    margin-right: 4px; }
+  .star:nth-child(-n+4) {
+    background: url(/images/star-active.svg) no-repeat center; }
+
+/*# sourceMappingURL=card.css.map */
