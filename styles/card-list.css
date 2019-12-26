@@ -1,6 +1,6 @@
 .card {
   margin: 0 24px 50px; }
-  .card__list {
+  .card-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
