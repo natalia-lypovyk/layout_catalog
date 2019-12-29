@@ -132,13 +132,17 @@
       background-color: #fff;
       color: #00acdc;
       font-size: 30px;
+      text-align: center;
       font-weight: bold;
-      outline: none; }
+      outline: none;
+      -webkit-transition: all 300ms ease-in-out;
+      transition: all 300ms ease-in-out; }
       .nav__button:active,
       .nav__button:focus ~ .nav__list {
         display: block; }
       .nav__button:hover {
-        background-color: #5de1eb; } }
+        background-color: #00acdc;
+        color: #000; } }
 
 .card {
   width: 200px;
