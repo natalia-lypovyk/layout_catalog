@@ -110,7 +110,9 @@
       background-color: #fff;
       color: #35477d;
       padding-left: 15px;
-      text-align: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
       -webkit-transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
       transition: color 300ms ease-in-out, background-color 300ms ease-in-out; }
     .nav__link:hover {
@@ -127,13 +129,16 @@
       border-radius: 8px;
       -webkit-box-shadow: 2px 2px 3px #375980;
               box-shadow: 2px 2px 3px #375980;
-      background-color: #00acdc;
+      background-color: #fff;
+      color: #00acdc;
+      font-size: 30px;
+      font-weight: bold;
       outline: none; }
       .nav__button:active,
       .nav__button:focus ~ .nav__list {
         display: block; }
       .nav__button:hover {
-        background-color: #00b7dc; } }
+        background-color: #5de1eb; } }
 
 .card {
   width: 200px;
