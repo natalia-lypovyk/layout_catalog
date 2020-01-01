@@ -70,18 +70,21 @@
     text-transform: uppercase;
     color: #000;
     text-decoration: none; }
-    .nav__link--active, .nav__link:hover {
+    .nav__link:hover {
       color: #00acdc; }
-    .nav__link--active::before {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      height: 4px;
-      width: 100%;
-      background-color: #00acdc; }
   .nav__button {
     display: none; }
+
+.is-active {
+  color: #00acdc; }
+  .is-active::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background-color: #00acdc; }
 
 @media screen and (max-width: 949px) {
   .header {
@@ -223,20 +226,26 @@
       color: #00acdc;
       background-color: #fff; }
 
-.card {
-  margin: 0 24px 50px; }
-
 .cards__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  grid-gap: 50px 48px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 0 auto;
-  max-width: 1100px; }
+  margin: 0 auto; }
+
+@media screen and (max-width: 1000px) {
+  .cards__list {
+    grid-template-columns: repeat(3, 200px); } }
+
+@media screen and (max-width: 750px) {
+  .cards__list {
+    grid-template-columns: repeat(2, 200px); } }
+
+@media screen and (max-width: 500px) {
+  .cards__list {
+    grid-template-columns: 200px; } }
 
 * {
   -webkit-box-sizing: border-box;
